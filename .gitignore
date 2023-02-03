@@ -1,1 +1,2 @@
 .vscode/ #此命令会忽略.vscode目录下的所有子文件(就是那些烦人的json)
+*.exe
