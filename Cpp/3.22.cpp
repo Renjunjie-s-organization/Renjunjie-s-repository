@@ -43,7 +43,7 @@ void d5(int tou,int jiao)//第五题运算函数
      int x,y;
      x  = (tou*4-jiao)/2;
      y  = tou - x;
-     cout<<"兔为"<<x<<",鸡为"<<y;
+     cout<<"兔为"<<x<<",鸡为"<<y<<endl;
      cin.get();
     return ;
 };
@@ -54,25 +54,25 @@ int main(void)
     cin>>pd;
 //第一题主体:
     if(pd==1){
-         cout<<"1:输入一个三位数,输出各位数字的和"<<endl;//从这里开始应该是卷子上的第六题 
+         cout<<"\n1:输入一个三位数,输出各位数字的和"<<endl;//从这里开始应该是卷子上的第六题 
          cin>>a;
       d1(a);
      }
 //第二题主体:
      else if(pd==2){
-         cout<<"2.输入一个三位数，输出倒数"<<endl;
+         cout<<"\n2.输入一个三位数，输出倒数"<<endl;
          cin>>a;
          d2(a);
      }
 //第三题主体:
      else if(pd==3){
-         cout<<"3.输入一个五位数，倒序输出"<<endl;
+         cout<<"\n3.输入一个五位数，倒序输出"<<endl;
          cin>>a;
          d3(a);
      }
 //第四题主体:
      else if(pd==4){
-         cout<<"输入两个整数a和b，交换他们的值，然后输出。"<<endl
+         cout<<"\n输入两个整数a和b,交换他们的值,然后输出"<<endl
              <<"请输入a:";
          cin>>a;
          cout<<"请输入b:";
@@ -82,20 +82,20 @@ int main(void)
 //第五题主体:
      else if(pd==5){
 
-        cout<<"5:鸡兔同笼（结果若为非整数将直接省略小数部分）"<<endl
-            <<"请输入头";
+        cout<<"\n5:鸡兔同笼（结果若为非整数将直接省略小数部分）"<<endl
+            <<"请输入头:";
          cin>>a;
-        cout<<"请输入脚";
+        cout<<"请输入脚:";
          cin>>b;
       d5(a,b);
      }
 //第一次if时pd没有通过任何布尔值判断式
      else
      {
-         cout<<"错误 请重启程序";
+         cout<<"错误 请重启程序"<<endl;
          cin.get();
      };
-    cout<<"\n程序已结束 按下任意键退出main函数";
+    cout<<"\n程序已结束 按下Enter退出main函数";
     cin.get();
     return 0;
 };
