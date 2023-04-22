@@ -1,5 +1,23 @@
 #include<iostream>
 using namespace std;
+int pdhc(void)
+{
+     int x;
+     cin>>x;
+     while (true)
+     {
+        if (x>=0 and x<=5)
+        {
+             break;
+        }
+        else
+        {
+             cout<<"错误 请输入1-5的值";
+             cin>>x;
+        };
+     };
+    return x;
+};
 void d1(int x)//第一题运算函数
 {
      int a,b,c;
@@ -47,12 +65,9 @@ void d5(int tou,int jiao)//第五题运算函数
      cin.get();
     return ;
 };
-int main(void)
-{
-    int a,b,pd;
-    cout<<"请输入题号(1-5)\n";
-    cin>>pd;
+void bshc(int pd){
 //第一题主体:
+     int a,b;
     if(pd==1){
          cout<<"\n1:输入一个三位数,输出各位数字的和"<<endl;//从这里开始应该是卷子上的第六题 
          cin>>a;
@@ -95,6 +110,13 @@ int main(void)
          cout<<"错误 请重启程序"<<endl;
          cin.get();
      };
+};
+int main(void)
+{
+    int a,b,pd;
+    cout<<"请输入题号(1-5)";
+    pd=pdhc();
+    bshc(pd);
     cout<<"\n程序已结束 按下Enter退出main函数";
     cin.get();
     return 0;
