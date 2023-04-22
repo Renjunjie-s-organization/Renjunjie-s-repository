@@ -5,6 +5,7 @@ tools/
 *.zip
 *.bat
 *.docx
+*.pdf
 #此命令不会提交xxxx文件
 
 #备注 此文件本身会被上传
