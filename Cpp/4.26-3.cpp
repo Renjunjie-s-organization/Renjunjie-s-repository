@@ -1,8 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(void){
-	int n,m=1,z=1;
-	int x=0,y=0; 
+	int n,m=1,z=1,x=0,y=0; 
 	cin>>n;
 	for(;z<=n;z++)
 	{
@@ -11,9 +10,13 @@ int main(void){
 			y=x;
 		};
 		if (n<=z){
-		break; 
-	};	
+		break;
+		cin.get(); 
+		};	
 	};
 	cout<<y;
+	cin.get();
+	cin.get();
+	cin.get();
 	return 0;
 }
